@@ -2548,9 +2548,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@metamask/core-monorepo@workspace:.":
+"@metamask/ui-monorepo@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@metamask/core-monorepo@workspace:."
+  resolution: "@metamask/ui-monorepo@workspace:."
   dependencies:
     "@babel/core": "npm:^7.23.5"
     "@babel/plugin-transform-modules-commonjs": "npm:^7.23.3"
@@ -12793,9 +12793,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::locator=%40metamask%2Fcore-monorepo%40workspace%3A.":
+"tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::locator=%40metamask%2Fui-monorepo%40workspace%3A.":
   version: 8.0.2
-  resolution: "tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::version=8.0.2&hash=ce4dd6&locator=%40metamask%2Fcore-monorepo%40workspace%3A."
+  resolution: "tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::version=8.0.2&hash=ce4dd6&locator=%40metamask%2Fui-monorepo%40workspace%3A."
   dependencies:
     bundle-require: "npm:^4.0.0"
     cac: "npm:^6.7.12"
