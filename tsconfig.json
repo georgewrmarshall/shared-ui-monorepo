@@ -1,5 +1,14 @@
 {
-  "compilerOptions": { "esModuleInterop": true, "noEmit": true },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noEmit": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true
+  },
   "references": [
     { "path": "./packages/accounts-controller" },
     { "path": "./packages/address-book-controller" },

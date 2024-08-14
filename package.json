@@ -37,7 +37,9 @@
     "test:scripts": "yarn jest --config ./jest.config.scripts.js --silent",
     "test:verbose": "yarn workspaces foreach --all --parallel --verbose run test:verbose",
     "update-readme-content": "ts-node scripts/update-readme-content.ts",
-    "workspaces:list-versions": "./scripts/list-workspace-versions.sh"
+    "workspaces:list-versions": "./scripts/list-workspace-versions.sh",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "simple-git-hooks": {
     "pre-push": "yarn lint"
@@ -49,6 +51,7 @@
     "@babel/core": "^7.23.5",
     "@babel/plugin-transform-modules-commonjs": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
+    "@chromatic-com/storybook": "^1.6.1",
     "@lavamoat/allow-scripts": "^3.0.4",
     "@metamask/create-release-branch": "^3.0.0",
     "@metamask/eslint-config": "^12.2.0",
@@ -59,12 +62,21 @@
     "@metamask/eth-json-rpc-provider": "^4.1.2",
     "@metamask/json-rpc-engine": "^9.0.2",
     "@metamask/utils": "^9.1.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-vite": "^8.2.9",
+    "@storybook/test": "^8.2.9",
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.191",
     "@types/node": "^16.18.54",
     "@types/semver": "^7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^4.3.1",
     "@yarnpkg/types": "^4.0.0",
     "babel-jest": "^27.5.1",
     "depcheck": "^1.4.7",
@@ -78,6 +90,7 @@
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "execa": "^5.0.0",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^27.5.1",
@@ -86,12 +99,15 @@
     "nock": "^13.3.1",
     "prettier": "^2.7.1",
     "prettier-plugin-packagejson": "^2.4.5",
+    "react-docgen-typescript": "^2.2.2",
     "rimraf": "^5.0.5",
     "semver": "^7.6.3",
     "simple-git-hooks": "^2.8.0",
+    "storybook": "^8.2.9",
     "ts-node": "^10.9.1",
     "tsup": "^8.0.2",
     "typescript": "~5.0.4",
+    "vite": "^5.4.0",
     "yargs": "^17.7.2"
   },
   "packageManager": "yarn@4.2.2",
@@ -104,7 +120,9 @@
       "@keystonehq/bc-ur-registry-eth>hdkey>secp256k1": true,
       "babel-runtime>core-js": false,
       "simple-git-hooks": false,
-      "tsup>esbuild": true
+      "tsup>esbuild": true,
+      "storybook>@storybook/core>esbuild": false,
+      "vite>esbuild": false
     }
   }
 }
