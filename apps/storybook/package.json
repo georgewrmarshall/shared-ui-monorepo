@@ -31,15 +31,20 @@
   ],
   "scripts": {
     "build": "tsup --config ../../tsup.config.ts --tsconfig ./tsconfig.build.json --clean",
+    "build-storybook": "storybook build",
     "build:docs": "typedoc",
     "changelog:validate": "../../scripts/validate-changelog.sh @metamask/storybook",
     "publish:preview": "yarn npm publish --tag preview",
+    "storybook": "storybook dev -p 6006",
     "test": "jest --reporters=jest-silent-reporter",
     "test:clean": "jest --clearCache",
     "test:verbose": "jest --verbose",
-    "test:watch": "jest --watch",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@lavamoat/allow-scripts": "^3.1.0",
+    "@metamask/design-tokens": "^4.0.0",
+    "react": "^18.3.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
@@ -69,11 +74,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "dependencies": {
-    "@lavamoat/allow-scripts": "^3.1.0",
-    "@metamask/design-tokens": "^4.0.0",
-    "react": "^18.3.1"
   },
   "lavamoat": {
     "allowScripts": {

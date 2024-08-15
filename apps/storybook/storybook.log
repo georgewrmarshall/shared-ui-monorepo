@@ -1,0 +1,41 @@
+➤ YN0000: · Yarn 4.2.2
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ @types/node is listed by your project with version 16.18.103, which doesn't satisfy what vite (pbeb27) requests (^18.0.0 || >=20.0.0).
+➤ YN0060: │ typescript is listed by your project with version 5.0.4, which doesn't satisfy what ts-jest (pce548) requests (>=3.8.0 <5.0.0-0).
+➤ YN0002: │ @metamask/accounts-controller@workspace:packages/accounts-controller [d7116] doesn't provide @metamask/providers (p6635a), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/accounts-controller@workspace:packages/accounts-controller doesn't provide @metamask/providers (p60d8e), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/assets-controllers@workspace:packages/assets-controllers doesn't provide @babel/runtime (pb0379), requested by @metamask/ethjs-provider-http.
+➤ YN0002: │ @metamask/assets-controllers@workspace:packages/assets-controllers doesn't provide @metamask/providers (p0a3f3), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/button@workspace:packages/button doesn't provide tailwindcss (p33bdf), requested by tailwindcss-animate.
+➤ YN0002: │ @metamask/chain-controller@workspace:packages/chain-controller doesn't provide @metamask/providers (pe842d), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/controller-utils@workspace:packages/controller-utils doesn't provide @babel/runtime (pc9ce5), requested by @metamask/ethjs-unit.
+➤ YN0002: │ @metamask/gas-fee-controller@workspace:packages/gas-fee-controller [58cb1] doesn't provide @babel/runtime (p57aff), requested by @metamask/ethjs-unit.
+➤ YN0002: │ @metamask/gas-fee-controller@workspace:packages/gas-fee-controller doesn't provide @babel/runtime (p7ed46), requested by @metamask/ethjs-unit.
+➤ YN0002: │ @metamask/keyring-controller@workspace:packages/keyring-controller doesn't provide @metamask/providers (p015a4), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/storybook@workspace:apps/storybook doesn't provide react (p7b6e3), requested by @storybook/react.
+➤ YN0002: │ @metamask/storybook@workspace:apps/storybook doesn't provide react (p9ba3f), requested by @storybook/react-vite.
+➤ YN0002: │ @metamask/storybook@workspace:apps/storybook doesn't provide react-dom (p5779b), requested by @storybook/react-vite.
+➤ YN0002: │ @metamask/storybook@workspace:apps/storybook doesn't provide react-dom (p7ffe1), requested by @storybook/react.
+➤ YN0002: │ @metamask/storybook@workspace:apps/storybook doesn't provide vite (p88724), requested by @storybook/react-vite.
+➤ YN0002: │ @metamask/transaction-controller@workspace:packages/transaction-controller [53fb6] doesn't provide @metamask/eth-block-tracker (pfe16e), requested by @metamask/nonce-tracker.
+➤ YN0002: │ @metamask/transaction-controller@workspace:packages/transaction-controller [53fb6] doesn't provide @metamask/providers (p4cca0), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/transaction-controller@workspace:packages/transaction-controller doesn't provide @metamask/eth-block-tracker (p7e5cf), requested by @metamask/nonce-tracker.
+➤ YN0002: │ @metamask/transaction-controller@workspace:packages/transaction-controller doesn't provide @metamask/providers (paf3f6), requested by @metamask/keyring-api.
+➤ YN0002: │ @metamask/ui-monorepo@workspace:. doesn't provide react (p5e90d), requested by @storybook/react.
+➤ YN0002: │ @metamask/ui-monorepo@workspace:. doesn't provide react (pd00e0), requested by @storybook/react-vite.
+➤ YN0002: │ @metamask/ui-monorepo@workspace:. doesn't provide react-dom (p23d77), requested by @storybook/react.
+➤ YN0002: │ @metamask/ui-monorepo@workspace:. doesn't provide react-dom (pb22aa), requested by @storybook/react-vite.
+➤ YN0086: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 202ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 299ms
+
+@lavamoat/allow-scripts has detected dependencies without configuration. explicit configuration required.
+run "allow-scripts auto" to automatically populate the configuration.
+
+packages missing configuration:
+- storybook>@storybook/core>esbuild [1 location(s)]
