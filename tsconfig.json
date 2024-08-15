@@ -20,6 +20,7 @@
     { "path": "./packages/button" },
     { "path": "./packages/composable-controller" },
     { "path": "./packages/controller-utils" },
+    { "path": "./packages/design-system-tailwind-preset" },
     { "path": "./packages/ens-controller" },
     { "path": "./packages/eth-json-rpc-provider" },
     { "path": "./packages/gas-fee-controller" },
