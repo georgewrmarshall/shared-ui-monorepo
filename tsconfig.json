@@ -41,6 +41,7 @@
     { "path": "./packages/rate-limit-controller" },
     { "path": "./packages/selected-network-controller" },
     { "path": "./packages/signature-controller" },
+    { "path": "./packages/storybook" },
     { "path": "./packages/transaction-controller" },
     { "path": "./packages/user-operation-controller" }
   ],

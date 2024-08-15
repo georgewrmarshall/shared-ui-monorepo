@@ -1,0 +1,83 @@
+{
+  "name": "@metamask/storybook",
+  "version": "0.0.0",
+  "description": "Storybook for web components",
+  "keywords": [
+    "MetaMask",
+    "Ethereum"
+  ],
+  "homepage": "https://github.com/MetaMask/core/tree/main/packages/storybook#readme",
+  "bugs": {
+    "url": "https://github.com/MetaMask/core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MetaMask/core.git"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsup --config ../../tsup.config.ts --tsconfig ./tsconfig.build.json --clean",
+    "build:docs": "typedoc",
+    "changelog:validate": "../../scripts/validate-changelog.sh @metamask/storybook",
+    "publish:preview": "yarn npm publish --tag preview",
+    "test": "jest --reporters=jest-silent-reporter",
+    "test:clean": "jest --clearCache",
+    "test:verbose": "jest --verbose",
+    "test:watch": "jest --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@metamask/auto-changelog": "^3.4.4",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-vite": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^18.3.3",
+    "deepmerge": "^4.2.2",
+    "jest": "^27.5.1",
+    "react-docgen-typescript": "^2.2.2",
+    "storybook": "^8.2.9",
+    "ts-jest": "^27.1.4",
+    "typedoc": "^0.24.8",
+    "typedoc-plugin-missing-exports": "^2.0.0",
+    "typescript": "~5.0.4"
+  },
+  "engines": {
+    "node": "^18.18 || >=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@lavamoat/allow-scripts": "^3.1.0",
+    "@metamask/design-tokens": "^4.0.0",
+    "react": "^18.3.1"
+  },
+  "lavamoat": {
+    "allowScripts": {
+      "storybook>@storybook/core>esbuild": false
+    }
+  }
+}
