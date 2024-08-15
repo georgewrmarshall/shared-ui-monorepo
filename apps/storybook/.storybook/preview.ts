@@ -1,6 +1,6 @@
 import { Preview } from '@storybook/react';
 import 'tailwindcss/tailwind.css';
-// import '../node_modules/@metamask/design-tokens/dist/styles.css';
+// import '../node_modules/@metamask/design-tokens/dist/styles.css'; // Not working currently check node_modules
 
 const preview: Preview = {
   parameters: {
