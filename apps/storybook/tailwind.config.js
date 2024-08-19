@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+/* eslint-disable */
 
 module.exports = {
   presets: [require('@metamask/tailwind-preset')],

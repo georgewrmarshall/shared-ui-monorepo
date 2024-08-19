@@ -1,6 +1,10 @@
 module.exports = {
   root: true,
-  extends: ['@metamask/eslint-config', '@metamask/eslint-config-nodejs', 'plugin:storybook/recommended'],
+  extends: [
+    '@metamask/eslint-config',
+    '@metamask/eslint-config-nodejs',
+    'plugin:storybook/recommended',
+  ],
   ignorePatterns: [
     '!.eslintrc.js',
     '!jest.config.js',
