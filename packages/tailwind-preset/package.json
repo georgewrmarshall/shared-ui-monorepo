@@ -1,12 +1,12 @@
 {
-  "name": "@metamask/design-system-tailwind-preset",
+  "name": "@metamask/tailwind-preset",
   "version": "0.0.0",
   "description": "Design system tailwind configuration",
   "keywords": [
     "MetaMask",
     "Ethereum"
   ],
-  "homepage": "https://github.com/MetaMask/core/tree/main/packages/design-system-tailwind-preset#readme",
+  "homepage": "https://github.com/MetaMask/core/tree/main/packages/tailwind-preset#readme",
   "bugs": {
     "url": "https://github.com/MetaMask/core/issues"
   },
@@ -32,7 +32,7 @@
   "scripts": {
     "build": "tsup --config ../../tsup.config.ts --tsconfig ./tsconfig.build.json --clean",
     "build:docs": "typedoc",
-    "changelog:validate": "../../scripts/validate-changelog.sh @metamask/design-system-tailwind-preset",
+    "changelog:validate": "../../scripts/validate-changelog.sh @metamask/tailwind-preset",
     "publish:preview": "yarn npm publish --tag preview",
     "test": "jest --reporters=jest-silent-reporter",
     "test:clean": "jest --clearCache",

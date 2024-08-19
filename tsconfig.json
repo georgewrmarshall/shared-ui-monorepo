@@ -11,7 +11,7 @@
   },
   "references": [
     { "path": "./packages/button" },
-    { "path": "./packages/design-system-tailwind-preset" }
+    { "path": "./packages/tailwind-preset" }
   ],
   "files": [],
   "include": ["./types"]

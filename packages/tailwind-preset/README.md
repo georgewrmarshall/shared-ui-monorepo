@@ -1,14 +1,14 @@
-# `@metamask/design-system-tailwind-preset`
+# `@metamask/tailwind-preset`
 
 Design system tailwind configuration
 
 ## Installation
 
-`yarn add @metamask/design-system-tailwind-preset`
+`yarn add @metamask/tailwind-preset`
 
 or
 
-`npm install @metamask/design-system-tailwind-preset`
+`npm install @metamask/tailwind-preset`
 
 ## Contributing
 
