@@ -4,5 +4,8 @@
     { "path": "./packages/tailwind-preset/tsconfig.build.json" }
   ],
   "files": [],
-  "include": []
+  "include": [],
+  "exclude": [
+    "apps/storybook" // Exclude Storybook from the build process
+  ]
 }
