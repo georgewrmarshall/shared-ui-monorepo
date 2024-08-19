@@ -15,11 +15,11 @@ const config: StorybookConfig = {
     '../../../packages/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
   addons: [
-    getAbsolutePath('@storybook/addon-onboarding'),
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@chromatic-com/storybook'),
     getAbsolutePath('@storybook/addon-interactions'),
+    getAbsolutePath('@storybook/addon-themes'),
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),

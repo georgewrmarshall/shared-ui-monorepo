@@ -2775,6 +2775,7 @@ __metadata:
     "@lavamoat/allow-scripts": "npm:^3.1.0"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/design-tokens": "npm:^4.0.0"
+    "@metamask/tailwind-preset": "workspace:^"
     "@storybook/addon-essentials": "npm:^8.2.9"
     "@storybook/addon-interactions": "npm:^8.2.9"
     "@storybook/addon-links": "npm:^8.2.9"
@@ -2801,7 +2802,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/tailwind-preset@workspace:packages/tailwind-preset":
+"@metamask/tailwind-preset@workspace:^, @metamask/tailwind-preset@workspace:packages/tailwind-preset":
   version: 0.0.0-use.local
   resolution: "@metamask/tailwind-preset@workspace:packages/tailwind-preset"
   dependencies:
