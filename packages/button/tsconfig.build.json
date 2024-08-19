@@ -7,5 +7,6 @@
     "jsx": "react-jsx"
   },
   "references": [],
-  "include": ["../../types", "./src"]
+  "include": ["../../types", "./src"],
+  "exclude": ["**/*.stories.ts", "**/*.stories.tsx"]
 }
