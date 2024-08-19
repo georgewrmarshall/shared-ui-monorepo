@@ -226,6 +226,9 @@ const tailwindConfig: Config = {
   plugins: [],
 };
 
+// Seems we eed both exports for tailwind presets to work correctly?
+// presets: [require('@metamask/tailwind-preset')],
+
 export default tailwindConfig;
 
 module.exports = tailwindConfig;
