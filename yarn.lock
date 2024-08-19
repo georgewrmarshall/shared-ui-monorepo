@@ -2778,7 +2778,6 @@ __metadata:
     "@storybook/addon-essentials": "npm:^8.2.9"
     "@storybook/addon-interactions": "npm:^8.2.9"
     "@storybook/addon-links": "npm:^8.2.9"
-    "@storybook/addon-onboarding": "npm:^8.2.9"
     "@storybook/addon-themes": "npm:^8.2.9"
     "@storybook/blocks": "npm:^8.2.9"
     "@storybook/react": "npm:^8.2.9"
@@ -3485,17 +3484,6 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.9
   checksum: 10/5a0c31b617bfdcd024c5325ab48771b8cf7b726336e24b9b0c7d4a4e8bda2093a8c2c264272b7fb36bf010f1bd54896df45b6f9092d020e696226b34e23ce208
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-onboarding@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "@storybook/addon-onboarding@npm:8.2.9"
-  dependencies:
-    react-confetti: "npm:^6.1.0"
-  peerDependencies:
-    storybook: ^8.2.9
-  checksum: 10/ce7b16e3ae2b979b3bf3d6daa29836b5196eb070edb3fd84c46e13158535dac0811bd65283fafa7c51d61e381a6eaad11d22a22d4b91a41a38850e8edf6c3816
   languageName: node
   linkType: hard
 

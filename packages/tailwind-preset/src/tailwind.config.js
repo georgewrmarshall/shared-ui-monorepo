@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+console.log(require('@metamask/tailwind-preset'));
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     extend: {
       backgroundColor: {
