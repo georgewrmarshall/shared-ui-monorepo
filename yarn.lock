@@ -2519,7 +2519,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lavamoat/allow-scripts@npm:^3.0.4, @lavamoat/allow-scripts@npm:^3.1.0":
+"@lavamoat/allow-scripts@npm:^3.1.0":
   version: 3.1.0
   resolution: "@lavamoat/allow-scripts@npm:3.1.0"
   dependencies:
@@ -2531,6 +2531,23 @@ __metadata:
   bin:
     allow-scripts: src/cli.js
   checksum: 10/0722e0be74bf2f592a8ed44dc26e93e0cd0cc9f33263fb68add85d533eb9fe6186d10f5919cb94b9254a0a7a3b7459ebb268ac9245887fbfa9f620e8ad87fa8f
+  languageName: node
+  linkType: hard
+
+"@lavamoat/allow-scripts@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@lavamoat/allow-scripts@npm:3.2.0"
+  dependencies:
+    "@lavamoat/aa": "npm:^4.3.0"
+    "@npmcli/run-script": "npm:8.1.0"
+    bin-links: "npm:4.0.4"
+    npm-normalize-package-bin: "npm:3.0.1"
+    yargs: "npm:17.7.2"
+  peerDependencies:
+    "@lavamoat/preinstall-always-fail": "*"
+  bin:
+    allow-scripts: src/cli.js
+  checksum: 10/21afb11ce25c0b2c9763bfb8f1127bb89f304ed83f64e00955c4d3007216a0ee553b777359e9ded874c61b3d7fa8d19ff8a35881cd3816985adab4d6b58bcb07
   languageName: node
   linkType: hard
 
@@ -2775,7 +2792,7 @@ __metadata:
     "@lavamoat/allow-scripts": "npm:^3.1.0"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/design-tokens": "npm:^4.0.0"
-    "@metamask/tailwind-preset": "workspace:^"
+    "@metamask/tailwind-preset": "npm:^0.0.0"
     "@storybook/addon-essentials": "npm:^8.2.9"
     "@storybook/addon-interactions": "npm:^8.2.9"
     "@storybook/addon-links": "npm:^8.2.9"
@@ -2803,7 +2820,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/tailwind-preset@workspace:^, @metamask/tailwind-preset@workspace:packages/tailwind-preset":
+"@metamask/tailwind-preset@npm:^0.0.0, @metamask/tailwind-preset@workspace:packages/tailwind-preset":
   version: 0.0.0-use.local
   resolution: "@metamask/tailwind-preset@workspace:packages/tailwind-preset"
   dependencies:
@@ -2826,8 +2843,9 @@ __metadata:
     "@babel/core": "npm:^7.23.5"
     "@babel/plugin-transform-modules-commonjs": "npm:^7.23.3"
     "@babel/preset-typescript": "npm:^7.23.3"
-    "@lavamoat/allow-scripts": "npm:^3.0.4"
+    "@lavamoat/allow-scripts": "npm:^3.2.0"
     "@metamask/create-release-branch": "npm:^3.0.0"
+    "@metamask/design-tokens": "npm:^4.0.0"
     "@metamask/eslint-config": "npm:^12.2.0"
     "@metamask/eslint-config-jest": "npm:^12.1.0"
     "@metamask/eslint-config-nodejs": "npm:^12.1.0"
@@ -3033,6 +3051,20 @@ __metadata:
     node-gyp: "npm:^10.0.0"
     which: "npm:^4.0.0"
   checksum: 10/f09268051f74af7d7be46e9911a23126d531160c338d3c05d53e6cd7994b88271fb4ec524139fe7f2d826525f15a281eafef3be02831adc1f68556a8a668621a
+  languageName: node
+  linkType: hard
+
+"@npmcli/run-script@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@npmcli/run-script@npm:8.1.0"
+  dependencies:
+    "@npmcli/node-gyp": "npm:^3.0.0"
+    "@npmcli/package-json": "npm:^5.0.0"
+    "@npmcli/promise-spawn": "npm:^7.0.0"
+    node-gyp: "npm:^10.0.0"
+    proc-log: "npm:^4.0.0"
+    which: "npm:^4.0.0"
+  checksum: 10/256bd580f82b98db93e54065bf9bcc94946be4f2d668a062cf756cb8ea091f58ef7154b3d2450d79738081a150f25cc48f6075351911e672f24ffd34350f02f2
   languageName: node
   linkType: hard
 
