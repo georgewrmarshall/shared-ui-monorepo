@@ -2824,6 +2824,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@metamask/tailwind-preset@workspace:packages/tailwind-preset"
   dependencies:
+    "@lavamoat/allow-scripts": "npm:^3.2.0"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@types/jest": "npm:^27.4.1"
     deepmerge: "npm:^4.2.2"

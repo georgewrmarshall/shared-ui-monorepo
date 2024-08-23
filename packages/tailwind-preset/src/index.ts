@@ -3,7 +3,7 @@
 import type { Config } from 'tailwindcss';
 
 const tailwindConfig: Config = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./node_modules/@metamask/button/src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       backgroundColor: {
