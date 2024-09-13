@@ -1,12 +1,12 @@
 {
-  "name": "@metamask/button",
+  "name": "@metamask/ui",
   "version": "0.0.0",
-  "description": "a button component",
+  "description": "Reusable UI components for MetaMask",
   "keywords": [
     "MetaMask",
     "Ethereum"
   ],
-  "homepage": "https://github.com/MetaMask/core/tree/main/packages/button#readme",
+  "homepage": "https://github.com/MetaMask/core/tree/main/packages/ui#readme",
   "bugs": {
     "url": "https://github.com/MetaMask/core/issues"
   },
@@ -32,7 +32,7 @@
   "scripts": {
     "build": "tsup --config ../../tsup.config.ts --tsconfig ./tsconfig.build.json --clean",
     "build:docs": "typedoc",
-    "changelog:validate": "../../scripts/validate-changelog.sh @metamask/button",
+    "changelog:validate": "../../scripts/validate-changelog.sh @metamask/ui",
     "publish:preview": "yarn npm publish --tag preview",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --reporters=jest-silent-reporter",
     "test:clean": "NODE_OPTIONS=--experimental-vm-modules jest --clearCache",

@@ -1,5 +1,5 @@
 {
-  "name": "@metamask/ui-monorepo",
+  "name": "@metamask/design-system",
   "version": "0.0.0",
   "private": true,
   "description": "Monorepo for packages shared between MetaMask clients",
@@ -47,6 +47,9 @@
   },
   "resolutions": {
     "tsup@^8.0.2": "patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch"
+  },
+  "dependencies": {
+    "@metamask/design-tokens": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
@@ -113,8 +116,5 @@
       "tsup>esbuild": true,
       "vite>esbuild": false
     }
-  },
-  "dependencies": {
-    "@metamask/design-tokens": "^4.0.0"
   }
 }

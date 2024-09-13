@@ -10,7 +10,7 @@
     "skipLibCheck": true
   },
   "references": [
-    { "path": "./packages/button" },
+    { "path": "./packages/ui" },
     { "path": "./packages/tailwind-preset" }
   ],
   "files": [],

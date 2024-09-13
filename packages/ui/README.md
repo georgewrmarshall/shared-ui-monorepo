@@ -1,14 +1,14 @@
-# `@metamask/button`
+# `@metamask/ui`
 
-a button component
+Reusasble react UI components for building MetaMask products
 
 ## Installation
 
-`yarn add @metamask/button`
+`yarn add @metamask/ui`
 
 or
 
-`npm install @metamask/button`
+`npm install @metamask/ui`
 
 ## Contributing
 

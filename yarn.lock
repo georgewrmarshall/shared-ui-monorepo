@@ -2604,31 +2604,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/button@workspace:packages/button":
-  version: 0.0.0-use.local
-  resolution: "@metamask/button@workspace:packages/button"
-  dependencies:
-    "@metamask/auto-changelog": "npm:^3.4.4"
-    "@metamask/design-tokens": "npm:^4.0.0"
-    "@types/jest": "npm:^27.4.1"
-    "@types/react": "npm:^18.3.3"
-    "@types/react-dom": "npm:^18"
-    class-variance-authority: "npm:^0.7.0"
-    clsx: "npm:^2.1.1"
-    deepmerge: "npm:^4.2.2"
-    jest: "npm:^27.5.1"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    tailwind: "npm:^4.0.0"
-    tailwind-merge: "npm:^2.5.2"
-    tailwindcss-animate: "npm:^1.0.7"
-    ts-jest: "npm:^27.1.4"
-    typedoc: "npm:^0.24.8"
-    typedoc-plugin-missing-exports: "npm:^2.0.0"
-    typescript: "npm:~5.0.4"
-  languageName: unknown
-  linkType: soft
-
 "@metamask/create-release-branch@npm:^3.0.0":
   version: 3.0.1
   resolution: "@metamask/create-release-branch@npm:3.0.1"
@@ -2650,6 +2625,64 @@ __metadata:
   checksum: 10/7a0b0044d64d9446bfb5de17311d06f6f52544c79367d4bb3963c060b43e9d6dde5215ef555d590a37175e1a6aa9313d2042eb06faed4c8eb73c4d17593ab47e
   languageName: node
   linkType: hard
+
+"@metamask/design-system@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@metamask/design-system@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.23.5"
+    "@babel/plugin-transform-modules-commonjs": "npm:^7.23.3"
+    "@babel/preset-typescript": "npm:^7.23.3"
+    "@lavamoat/allow-scripts": "npm:^3.2.0"
+    "@metamask/create-release-branch": "npm:^3.0.0"
+    "@metamask/design-tokens": "npm:^4.0.0"
+    "@metamask/eslint-config": "npm:^12.2.0"
+    "@metamask/eslint-config-jest": "npm:^12.1.0"
+    "@metamask/eslint-config-nodejs": "npm:^12.1.0"
+    "@metamask/eslint-config-typescript": "npm:^12.1.0"
+    "@metamask/eth-block-tracker": "npm:^9.0.3"
+    "@metamask/eth-json-rpc-provider": "npm:^4.1.2"
+    "@metamask/json-rpc-engine": "npm:^9.0.2"
+    "@metamask/utils": "npm:^9.1.0"
+    "@types/jest": "npm:^27.4.1"
+    "@types/lodash": "npm:^4.14.191"
+    "@types/node": "npm:^16.18.54"
+    "@types/semver": "npm:^7"
+    "@typescript-eslint/eslint-plugin": "npm:^5.62.0"
+    "@typescript-eslint/parser": "npm:^5.62.0"
+    "@vitejs/plugin-react": "npm:^4.3.1"
+    "@yarnpkg/types": "npm:^4.0.0"
+    babel-jest: "npm:^27.5.1"
+    depcheck: "npm:^1.4.7"
+    eslint: "npm:^8.44.0"
+    eslint-config-prettier: "npm:^8.5.0"
+    eslint-import-resolver-typescript: "npm:^2.5.0"
+    eslint-interactive: "npm:^10.8.0"
+    eslint-plugin-import: "npm:2.26.0"
+    eslint-plugin-jest: "npm:^27.1.5"
+    eslint-plugin-jsdoc: "npm:^39.9.1"
+    eslint-plugin-n: "npm:^15.7.0"
+    eslint-plugin-prettier: "npm:^4.2.1"
+    eslint-plugin-promise: "npm:^6.1.1"
+    execa: "npm:^5.0.0"
+    isomorphic-fetch: "npm:^3.0.0"
+    jest: "npm:^27.5.1"
+    jest-silent-reporter: "npm:^0.5.0"
+    lodash: "npm:^4.17.21"
+    nock: "npm:^13.3.1"
+    prettier: "npm:^2.7.1"
+    prettier-plugin-packagejson: "npm:^2.4.5"
+    react-docgen-typescript: "npm:^2.2.2"
+    rimraf: "npm:^5.0.5"
+    semver: "npm:^7.6.3"
+    simple-git-hooks: "npm:^2.8.0"
+    ts-node: "npm:^10.9.1"
+    tsup: "npm:^8.0.2"
+    typescript: "npm:~5.0.4"
+    vite: "npm:^5.4.0"
+    yargs: "npm:^17.7.2"
+  languageName: unknown
+  linkType: soft
 
 "@metamask/design-tokens@npm:^4.0.0":
   version: 4.0.0
@@ -2837,61 +2870,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@metamask/ui-monorepo@workspace:.":
+"@metamask/ui@workspace:packages/ui":
   version: 0.0.0-use.local
-  resolution: "@metamask/ui-monorepo@workspace:."
+  resolution: "@metamask/ui@workspace:packages/ui"
   dependencies:
-    "@babel/core": "npm:^7.23.5"
-    "@babel/plugin-transform-modules-commonjs": "npm:^7.23.3"
-    "@babel/preset-typescript": "npm:^7.23.3"
-    "@lavamoat/allow-scripts": "npm:^3.2.0"
-    "@metamask/create-release-branch": "npm:^3.0.0"
+    "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/design-tokens": "npm:^4.0.0"
-    "@metamask/eslint-config": "npm:^12.2.0"
-    "@metamask/eslint-config-jest": "npm:^12.1.0"
-    "@metamask/eslint-config-nodejs": "npm:^12.1.0"
-    "@metamask/eslint-config-typescript": "npm:^12.1.0"
-    "@metamask/eth-block-tracker": "npm:^9.0.3"
-    "@metamask/eth-json-rpc-provider": "npm:^4.1.2"
-    "@metamask/json-rpc-engine": "npm:^9.0.2"
-    "@metamask/utils": "npm:^9.1.0"
     "@types/jest": "npm:^27.4.1"
-    "@types/lodash": "npm:^4.14.191"
-    "@types/node": "npm:^16.18.54"
-    "@types/semver": "npm:^7"
-    "@typescript-eslint/eslint-plugin": "npm:^5.62.0"
-    "@typescript-eslint/parser": "npm:^5.62.0"
-    "@vitejs/plugin-react": "npm:^4.3.1"
-    "@yarnpkg/types": "npm:^4.0.0"
-    babel-jest: "npm:^27.5.1"
-    depcheck: "npm:^1.4.7"
-    eslint: "npm:^8.44.0"
-    eslint-config-prettier: "npm:^8.5.0"
-    eslint-import-resolver-typescript: "npm:^2.5.0"
-    eslint-interactive: "npm:^10.8.0"
-    eslint-plugin-import: "npm:2.26.0"
-    eslint-plugin-jest: "npm:^27.1.5"
-    eslint-plugin-jsdoc: "npm:^39.9.1"
-    eslint-plugin-n: "npm:^15.7.0"
-    eslint-plugin-prettier: "npm:^4.2.1"
-    eslint-plugin-promise: "npm:^6.1.1"
-    execa: "npm:^5.0.0"
-    isomorphic-fetch: "npm:^3.0.0"
+    "@types/react": "npm:^18.3.3"
+    "@types/react-dom": "npm:^18"
+    class-variance-authority: "npm:^0.7.0"
+    clsx: "npm:^2.1.1"
+    deepmerge: "npm:^4.2.2"
     jest: "npm:^27.5.1"
-    jest-silent-reporter: "npm:^0.5.0"
-    lodash: "npm:^4.17.21"
-    nock: "npm:^13.3.1"
-    prettier: "npm:^2.7.1"
-    prettier-plugin-packagejson: "npm:^2.4.5"
-    react-docgen-typescript: "npm:^2.2.2"
-    rimraf: "npm:^5.0.5"
-    semver: "npm:^7.6.3"
-    simple-git-hooks: "npm:^2.8.0"
-    ts-node: "npm:^10.9.1"
-    tsup: "npm:^8.0.2"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    tailwind: "npm:^4.0.0"
+    tailwind-merge: "npm:^2.5.2"
+    tailwindcss-animate: "npm:^1.0.7"
+    ts-jest: "npm:^27.1.4"
+    typedoc: "npm:^0.24.8"
+    typedoc-plugin-missing-exports: "npm:^2.0.0"
     typescript: "npm:~5.0.4"
-    vite: "npm:^5.4.0"
-    yargs: "npm:^17.7.2"
   languageName: unknown
   linkType: soft
 
@@ -13793,9 +13793,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::locator=%40metamask%2Fui-monorepo%40workspace%3A.":
+"tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::locator=%40metamask%2Fdesign-system%40workspace%3A.":
   version: 8.0.2
-  resolution: "tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::version=8.0.2&hash=ce4dd6&locator=%40metamask%2Fui-monorepo%40workspace%3A."
+  resolution: "tsup@patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch::version=8.0.2&hash=ce4dd6&locator=%40metamask%2Fdesign-system%40workspace%3A."
   dependencies:
     bundle-require: "npm:^4.0.0"
     cac: "npm:^6.7.12"

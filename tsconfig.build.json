@@ -1,6 +1,6 @@
 {
   "references": [
-    { "path": "./packages/button/tsconfig.build.json" },
+    { "path": "./packages/ui/tsconfig.build.json" },
     { "path": "./packages/tailwind-preset/tsconfig.build.json" }
   ],
   "files": [],

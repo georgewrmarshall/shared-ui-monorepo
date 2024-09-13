@@ -1,4 +1,4 @@
-# Core Monorepo
+# Design System Monorepo
 
 This monorepo is a collection of packages used across multiple MetaMask clients (e.g. [`metamask-extension`](https://github.com/MetaMask/metamask-extension/), [`metamask-mobile`](https://github.com/MetaMask/metamask-mobile/)).
 
@@ -8,7 +8,7 @@ This repository contains the following packages [^fn1]:
 
 <!-- start package list -->
 
-- [`@metamask/button`](packages/button)
+- [`@metamask/ui`](packages/ui)
 
 <!-- end package list -->
 
