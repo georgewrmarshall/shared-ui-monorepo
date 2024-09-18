@@ -7,7 +7,7 @@ This document outlines the process for migrating a MetaMask library into the cor
 ### **[PR#1]** 1. Add the following migration notice to the README
 
 ```markdown
-<table><tr><td><p align="center"><b>⚠️ PLEASE READ ⚠️</b></p><p align="center">This package is currently being migrated to our <a href="https://github.com/MetaMask/core"><code>core</code></a> monorepo. Please do not make any commits to this repository while this migration is taking place, as they will not be transferred over. Also, please re-open PRs that are under active development in the core repo.</p></td></tr></table>
+<table><tr><td><p align="center"><b>⚠️ PLEASE READ ⚠️</b></p><p align="center">This package is currently being migrated to our <a href="https://github.com/georgewrmarshall/shared-ui-monorepo"><code>core</code></a> monorepo. Please do not make any commits to this repository while this migration is taking place, as they will not be transferred over. Also, please re-open PRs that are under active development in the core repo.</p></td></tr></table>
 ```
 
 - [Example PR](https://github.com/MetaMask/eth-json-rpc-provider/pull/38)
@@ -67,11 +67,11 @@ This document outlines the process for migrating a MetaMask library into the cor
 > - Ensure that superfluous merge commits to the main branch don't pollute the migrated git history.
 >   - Coordinate with the team to minimize the time that this PR stays open.
 >   - If necessary, replace the PR branch with a cleaned-up commit history by rerunning the git history migration steps before merging the PR.
->   - For further context on this: https://github.com/MetaMask/core/pull/1804#issuecomment-1771445829
+>   - For further context on this: https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1804#issuecomment-1771445829
 > - Merge PR **without squashing** to preserve the migrated git commit history.
 >   - Contact a [**maintainer**](https://github.com/orgs/MetaMask/teams/engineering?query=role%3Amaintainer) to temporarily enable merge commits into main.
 
-- [Example PR](https://github.com/MetaMask/core/pull/1872)
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1872)
 
 ### **[PR#7]** 2. Update the CHANGELOG tag diff links so that they follow the core repo's tag naming convention
 
@@ -111,7 +111,7 @@ This document outlines the process for migrating a MetaMask library into the cor
 
 - **Remove**: `.github/`, `.git*`, `scripts/`, `.depcheckrc.json`, `.yarn/`, `.yarnrc.yml`, `yarn.lock`, `.editorconfig`, `.eslint*`, `.prettier*`, `.nvm*`.
 - **Keep**: `src/`, `tests/`, `CHANGELOG.md`, `LICENSE`, `package.json`, `README.md`, `jest.config.js`, `tsconfig*.json`, `typedoc.json`
-- [Example PR](https://github.com/MetaMask/core/pull/1764)
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1764)
 
 ### **[PR#9]** 5. Replace config files
 
@@ -120,7 +120,7 @@ This document outlines the process for migrating a MetaMask library into the cor
 - Add tsconfig reference paths for non-root packages that are upstream dependencies of the migration target.
 - Preserve Jest coverage threshold values.
 - Add `deepmerge` as a devDependency.
-- [Example PR](https://github.com/MetaMask/core/pull/1765)
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1765)
 
 ### **[PR#10]** 6. Align dependencies and build scripts with monorepo
 
@@ -132,14 +132,14 @@ This document outlines the process for migrating a MetaMask library into the cor
   - If it's behind:
     - Bump if it's an internal dependency (i.e. the dependency is another sub-package in the monorepo).
     - If it's external, bump only if there are no resulting breaking changes that need to be resolved.
-- [Example PR](https://github.com/MetaMask/core/pull/1766)
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1766)
 
 ### **[PR#11]** 7. Add exception for non-MIT license
 
 - If the migration target uses a non-MIT license, add exception entries in the root `constraints.pro` file.
   - In the license section of `constraints.pro`: Exclude (`\=`) and include (`==`) the package in the appropriate license rules.
 - Make sure the new rule doesn't break any of the existing package.json files by running `yarn constraints`.
-- [Example PR](https://github.com/MetaMask/core/pull/1888)
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1888)
 
 ### **[PR#12]** 8. Update the README to reflect its new status as a non-root package in the monorepo
 
@@ -153,7 +153,7 @@ This document outlines the process for migrating a MetaMask library into the cor
 
 - The following steps of "Phase C" need to happen in a single PR.
 - Coordinate with the team to minimize the time that this PR stays open to avoid merge conflicts with the main branch from accumulating.
-- [Example PR](https://github.com/MetaMask/core/pull/1738)
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1738)
 
 ### 1. Move the migration target directory from `merged-packages/` into `packages/`
 
@@ -166,7 +166,7 @@ This document outlines the process for migrating a MetaMask library into the cor
   - This step is essential to avoid build failure for the migration target during release workflow.
 - Add tsconfig reference paths for the migration target in downstream packages.
 - Bump the migration target version in downstream packages and root.
-  - Notes on why this version bump needs to happen as part of this PR (import module shadowing): https://github.com/MetaMask/core/pull/1738#discussion_r1357554901
+  - Notes on why this version bump needs to happen as part of this PR (import module shadowing): https://github.com/georgewrmarshall/shared-ui-monorepo/pull/1738#discussion_r1357554901
 
 ### 3. Linter fixes
 
@@ -179,12 +179,12 @@ This document outlines the process for migrating a MetaMask library into the cor
   - Resolve simple errors as part of this PR.
   - Mark and ignore complex/blocked errors using `@ts-expect-error TODO:` annotations.
 - Create a separate issue for resolving the marked errors as soon as the migration is completed.
-  - e.g. https://github.com/MetaMask/core/issues/1823
+  - e.g. https://github.com/georgewrmarshall/shared-ui-monorepo/issues/1823
 
 ### 5. Record changes made to any core package in its CHANGELOG, under the `## [Unreleased]` heading
 
 - CHANGELOG entries should be recorded in the migration target's downstream packages for version bumps to the migration target's current release.
-- [Example PR](https://github.com/MetaMask/core/pull/2003/files): this step can be performed either as a part of Phase C, or in a separate, subsequent PR.
+- [Example PR](https://github.com/georgewrmarshall/shared-ui-monorepo/pull/2003/files): this step can be performed either as a part of Phase C, or in a separate, subsequent PR.
 
 ### 6. Finalize merge
 
@@ -200,7 +200,7 @@ This document outlines the process for migrating a MetaMask library into the cor
 2. For open PRs in the source repo, lock conversation (do not provide a reason), and leave a comment requesting that authors reopen the PR in core with a link pointing to the discussion in the original PR. For important PRs, manually migrate into core or create tickets for follow-up.
 
 ```markdown
-This library has now been migrated into the [core monorepo](https://github.com/metamask/core/). This PR has been locked and this repo will be archived shortly. Going forward, releases of this library will only include changes made in the core repo.
+This library has now been migrated into the [core monorepo](https://github.com/georgewrmarshall/shared-ui-monorepo/). This PR has been locked and this repo will be archived shortly. Going forward, releases of this library will only include changes made in the core repo.
 
 - Please push this branch to core and open a new PR there.
 - Optionally, add a link pointing to the discussion in this PR to provide context.
@@ -217,10 +217,14 @@ This library has now been migrated into the [core monorepo](https://github.com/m
       <p align="center"><b>⚠️ PLEASE READ ⚠️</b></p>
       <p align="center">
         This package has been migrated to our
-        <a href="https://github.com/MetaMask/core"><code>core</code></a>
+        <a href="https://github.com/georgewrmarshall/shared-ui-monorepo"
+          ><code>core</code></a
+        >
         monorepo, and this repository has been archived. Please note that all
         future development and feature releases will take place in the
-        <a href="https://github.com/MetaMask/core"><code>core</code></a>
+        <a href="https://github.com/georgewrmarshall/shared-ui-monorepo"
+          ><code>core</code></a
+        >
         repository.
       </p>
     </td>
