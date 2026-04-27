@@ -64,7 +64,7 @@
     "@metamask/eth-block-tracker": "^9.0.3",
     "@metamask/eth-json-rpc-provider": "^4.1.2",
     "@metamask/json-rpc-engine": "^9.0.2",
-    "@metamask/utils": "^9.1.0",
+    "@metamask/utils": "^11.11.0",
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.191",
     "@types/node": "^16.18.54",
